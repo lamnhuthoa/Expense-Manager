@@ -23,7 +23,16 @@ const DUMMY_EXPENSES = [
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-  ];
+];
+
+//Thinking about how to get data of Date from localStorage to calculate date function for expense
+// for (let i = 0; i < savedExpensesData.length; i++) {
+//     let date = savedExpensesData[i]["date"];
+//     let year = date.split("-")[0];
+//     let month = date.split("-")[1];
+//     let day = date.split("-")[2].split("T")[0];
+//     let insertDate = new Date(year, month, day);
+// }
 
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
